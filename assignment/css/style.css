@@ -34,7 +34,7 @@ color:black;
   background-color:blue;
   margin:auto;
   width:80%;
-  height:100px;
+  height:200px;
 }
 .content,aside
 {
@@ -56,4 +56,26 @@ aside ul
 {
   list-style: none;
   padding-left: 0;
+}
+.frm ul
+{
+
+  padding-left: 0;
+}
+.frm li
+{
+  list-style: none;
+  margin-bottom: 20px;
+}
+label
+{
+font-family:sans-serif;
+display:block;
+cursor:pointer;
+padding-bottom: 8px;
+}
+textarea
+{
+  width:200px;
+  height:100px;
 }
