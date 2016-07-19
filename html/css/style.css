@@ -1,0 +1,20 @@
+/*a{
+  color:green;text-decoration: none;
+}
+h1
+{
+  font-family:cursive;;
+}
+body{
+  font-size: 20px;
+  text-decoration-color: currentColor;
+  text-decoration-style:dotted;
+  text-decoration: underline;
+}*/
+div{
+  width:700px;
+  height:600px;
+  margin:auto;
+  background:pink;
+  text-align: center;
+}
