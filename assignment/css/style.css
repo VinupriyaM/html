@@ -79,3 +79,10 @@ textarea
   width:200px;
   height:100px;
 }
+.imgrplcemnt
+{
+  background:url(../img/images.jpg) repeat;
+  text-indent:-9999px;
+  width:160px;
+  height:85px;
+}
