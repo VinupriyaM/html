@@ -96,5 +96,27 @@ font-family:sans-serif;
 letter-spacing:2px;
 color: #666;
 text-transform: uppercase;
-text-shadow: 5px 10px 10px blue;
+text-shadow:
+5px 1px 4px white
+4px 2px 4px red;
+}
+.wra
+{
+/*margin:auto;*/
+background:#666;
+width:900px;
+height:100px;
+margin:0px;
+}
+.box
+{
+  background:black;
+  /*position:absolute;*/
+  position:relative;
+  top:30px;
+  right:300px;
+  left:20px;
+  /*margin:auto;*/
+  width:80px;
+  height:100px;
 }
