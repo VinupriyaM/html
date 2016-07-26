@@ -112,12 +112,25 @@ header{
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
 }
+.imgmain{
+  width:300px;
+  height:250px;
+}
 .firstsec,.secondsec,.thirdsec
 {
-border-style:;
+border-style:double;
 border-width:1px;
 padding:2px;
 
+}
+blockquote{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom:40px;
+  margin-left:0;
+  text-align:left;
+  text-shadow: 2px 2px #666;
+  color:#806000;
 }
 /*.firstsec
 {
