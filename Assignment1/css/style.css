@@ -1,0 +1,158 @@
+header{
+  position:fixed;
+  margin-bottom:0;
+  height:100px;
+  color:white;
+  background:black;
+  padding-left: 50px;
+  width:1303px;
+  margin-left: -200px;
+  margin-top:-15px;
+  z-index: 1;
+}
+.title{
+  margin-top:40px;
+  font-size:30px;
+}
+/*header{
+  position:fixed;
+  margin-top:-20px;
+  top:15px;
+  background-color:black;
+  padding-left:150px;
+  margin:auto;
+  z-index:9999;
+  width:1500px;
+  left:-250px;
+  top:-10px;
+  margin-left:250px;
+}*/
+#img1{
+  background-image:url("../images/nam3.jpg");
+  width:70px;
+  height:100px;
+  background-repeat: no-repeat;
+  border-radius:40%;
+}
+.meta{
+  width:1300px;
+  margin:0;
+  padding-top:50px;
+  background-color:black;
+}
+.meta ul{
+  margin-top:-200px;
+  margin:bottom:-999px;
+}
+.meta a{
+  font-style:sans-serif;
+  font-size:12px;
+  display:inline;
+}
+.meta li{
+  display:inline;
+  padding-left:50px;
+  padding-right:5px;
+  padding-bottom:6px;
+  padding-top: -20px;
+}
+.meta a{
+  text-decoration: none;
+  color:white;
+  font-size:15px;
+}
+.meta a:hover{
+  color: red;
+  font-family: sans-serif;
+  background:#E9F9F8;
+}
+.second
+{
+  width:100%;
+
+}
+.third{
+  text-align:justify;
+  margin-top: 10px;
+
+}
+.third h2{
+  text-align:center;
+}
+.hero
+{
+  background-image:url("../images/tamilnadu.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  width:95%;
+  height:100%;
+  margin-left:45px;
+  margin-right:150px;
+  position:relative;
+  top:40px;
+  left:10px;
+  right:100px;
+
+
+}
+.primary{
+  color:blue;
+  font-size:20px;
+  position:absolute;
+  top:200px;
+  left:200px;
+  right:500px;
+  width:100%;
+}
+.primary span{
+  color:white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+.firstsec,.secondsec,.thirdsec
+{
+border-style:;
+border-width:1px;
+padding:2px;
+
+}
+/*.firstsec
+{
+  margin-right:20px;
+  border-style: solid;
+  border-width:1px;
+  padding:10px 10px;
+  /*background-color:#AE3DEF;
+
+}
+.secondsec
+{
+  margin-left:20px;
+  margin-right:20px;
+  /*background-color:#EAB768;
+  border-style: solid;
+  border-width:1px;
+  padding:10px 10px;
+}
+.thirdsec
+{
+margin-left:20px;
+margin-right:-20px;
+border-style: solid;
+border-width:1px;
+padding:10px 10px;
+/*background-color:#3BD8C5;
+}*/
+
+/*
+.newsec{
+  background-color: #666;
+}
+.newsec2
+{
+margin:top:-2px;
+background-color:black;
+}*/
