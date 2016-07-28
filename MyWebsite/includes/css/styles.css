@@ -13,13 +13,30 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Layout
    -------------------------------------- */
-
+#features{
+  text-align: center;
+}
+#features img{
+  margin:0 0 20px;
+}
+#inputMessage{
+  margin-bottom:15px;
+}
+footer{
+  background:#333;
+  color:#eee;
+  font-size:11px;
+  padding:20px;
+}
 
 
 /* --------------------------------------
    Typography
    -------------------------------------- */
-
+ul.unstyled{
+  list-style:none;
+  padding:0;
+}
 
 
 /* --------------------------------------
@@ -56,7 +73,7 @@ Notes:	 Hand coded for Udemy.com
    }
    #slide1
    {
-   background:url('../../images/carousel_medium_01.jpg') top center no-repeat;
+   background:url('../../images/TN_medium.jpg') top center no-repeat;
   /* background:url('../../images/tamilnadu.jpg') top center no-repeat;*/
      background-size: cover;
    }
@@ -86,6 +103,48 @@ Notes:	 Hand coded for Udemy.com
   margin-top:20px;
   display:none;
 }
+.well
+{
+margin:20px 0px;
+}
+.well .page-header{
+  margin-top:0px;
+  }
+  .well .page-header h1{
+    margin-top:0px;
+  }
+  .body{
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizelegibility;
+  }
+  .tabbable img.thumbnail{
+    margin:0 20px 10px 0;
+    }
+    .thumbnails{
+      margin:20px 0;
+    }
+    .thumbnail{
+      position:relative;
+      }
+      .thumbnail h3{
+        font-size:16px;
+        margin:0 0 10px;
+        line-height:20px;
+      }
+      .thumbnail .price{
+        font-size:22px;
+        position:absolute;
+        top:-10px;
+        right:-10px;
+        padding:10px;
+      }
+      .thumbnail .price sup{
+        font-weight:normal;
+        font-size:12px;
+      }
+  .thumbnail span.glyphicon{
+    margin-right:5px;
+  }
 
 /* --------------------------------------
    Media Queries
@@ -93,6 +152,17 @@ Notes:	 Hand coded for Udemy.com
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
+  #slide1
+  {
+  /*background:url('../../images/carousel_small_01.jpg') top center no-repeat;*/
+background:url('../../images/TN_small.jpg') top center no-repeat;
+  }
+  .thumbnail .price{
+    font-size:14px;
+  }
+  .thumbnail .price sup{
+    font-size:10px;
+  }
 
 }
 
@@ -103,8 +173,8 @@ Notes:	 Hand coded for Udemy.com
   }
   #slide1
   {
-  background:url('../../images/carousel_small_01.jpg') top center no-repeat;
-  /*background:url('../../images/tamilnadu.jpg') top center no-repeat;*/
+  /*background:url('../../images/carousel_small_01.jpg') top center no-repeat;*/
+background:url('../../images/TN_medium.jpg') top center no-repeat;
   }
   #slide2
   {
@@ -132,8 +202,8 @@ Notes:	 Hand coded for Udemy.com
   }
   #slide1
   {
-  background:url('../../images/carousel_large_01.jpg') top center no-repeat;
-  /*background:url('../../images/tamilnadu.jpg') top center no-repeat;*/
+  /*background:url('../../images/carousel_large_01.jpg') top center no-repeat;*/
+  background:url('../../images/TN_big.jpg') top center no-repeat;
   background-size: cover;
   }
   #slide2
