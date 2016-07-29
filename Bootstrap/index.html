@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+
+   <div class="container" id="main">
+
+
+		 <div class="navbar navbar-fixed-top navbar-inverse">
+
+			 <div class="container">
+         <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					 <span class="icon-bar"></span>
+					 <span class="icon-bar"></span>
+					 <span class="icon-bar"></span>
+
+				 </button>
+				 <a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"/></a>
+
+				<div class="nav-collapse collapse navbar-responsive-collapse pull-right" id="menu">
+					 <ul class="nav navbar-nav nav-pills">
+						 <li>
+							 <a href="#">Home</a>
+						 </li>
+						 <li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+									<li><a href="#">Listitem1</a></li>
+									<li><a href="#">Listitem1</a></li>
+									<li><a href="#">Listitem1</a></li>
+									<li class="divider"></li>
+									<li class="dropdown-header">More Services</li>
+									<li><a href="#">Sublist item1</a></li>
+									<li><a href="#">Sublist item2</a></li>
+								</ul>
+							</li>
+							<!----->
+							<li class="dropdown">
+ 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Visions<strong class="caret"></strong></a>
+                 <ul class="dropdown-menu">
+ 									<li><a href="#">Listitem1</a></li>
+ 									<li><a href="#">Listitem1</a></li>
+ 									<li><a href="#">Listitem1</a></li>
+ 									<li class="divider"></li>
+ 									<li class="dropdown-header">More Services</li>
+ 									<li><a href="#">Sublist item1</a></li>
+ 									<li><a href="#">Sublist item2</a></li>
+ 								</ul>
+ 							</li>
+					 </ul><!--end of menus-->
+					<form class="navbar-form pull-left">
+					  <input type="text" class="form-control" placeholder="Search this site.." id="searchinput">
+					  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+				  </form>
+				<!--<ul class="nav navbar-nav pull-right">
+					<li class="dropdown">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"> My Account <strong class="caret"></strong></span></a>
+					 <ul class="dropdown-menu">
+						 <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+						 <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Update Profile</a></li>
+						 <li><a href="#"><span class="glyphicon glyphicon-barcode"></span> Purchase</a></li>
+						 <li class="divider"></li>
+						 <li><a href="#"<span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+					 </ul>
+					</li>
+				</ul>-->
+
+			</div><!--end of nav collapse-->
+		</div><!--end of container-->
+		 </div><!--end of navbar-->
+
+
+		 <div class="carousel slide" id="mycarousel">
+			<!--Indicators-->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#mycarousel"></li>
+				<li data-slide-to="1" data-target="#mycarousel"></li>
+				<li data-slide-to="2" data-target="#mycarousel"></li>
+			</ol>
+
+			<!--Wrapper for slides-->
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<h4>Tradition-Our Pride</h4>
+						<p>Tamilnadu has been known for its heritage and cultural values from a very long time</p>
+					</div>
+				</div>
+
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<h4>Gaming and Sports</h4>
+						<p>The iconic brand of bravery remained in our gaming practices and sports</p>
+					</div>
+				</div>
+
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>Traditional Arts</h4>
+						<p>The art forms were elegant and remarkable</p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		<!--controls-->
+		<a class="left carousel-control" data-slide="prev" href="#mycarousel"><span class="icon-prev"></span></a>
+		<a class="right carousel-control" data-slide="next" href="#mycarousel"><span class="icon-next"></span></a>
+
+
+	</div><!--end of carousel-->
+
+
+		 <div class="row" id="bigcallout">
+			 <div class="col-12">
+
+				 <div class="alert alert-success alert-block fade in" id="successalert">
+					 <button type="button" class="close" data-dismiss="alert">&times;</button>
+
+					 <h4>Success</h4>
+					 <p>You had clicked the button!</p>
+				 </div><!--end of alert-->
+
+				 <div class="well well-small visible-sm">
+					 <a href="" class="btn btn-large btn-block btn-default">
+						 <span class="glyphicon glyphicon-phone"> Give us a call</span></a>
+				 </div><!--end of well-small-->
+
+				 <div class="well">
+					 <div class="page-header">
+						 <h1>About us</h1>
+					 </div>
+
+						 <p class="lead">Parambariyam-the bloomed plant having its strong roots on the culture and heriatage of our very own TAMIL NADU.It is basically an NGO serving for the cause of "Promoting cultural and traditional practices" which are in the verge of extinct.We,as member of this prestigious place have the responsibility of protecting our cultural values and taking it safely to our next generation.But in the growth of modernity we started losing our incredible practices and forms which once stood as our identity.</p>
+
+
+					  <center> <a href="about.html" class="btn btn-link">Know about us more here</a></center>
+				</div><!--end of well-->
+
+			</div><!--end of col-12-->
+		 </div><!--end of callout-->
+
+		 <div class="row" id="featuresheading">
+       <div class="col-12">
+
+				 <p class="lead">"Look out here for something which have been erased from our memory and from our society"</p>
+			 </div>
+ 		</div><!--end of featuresheading-->
+
+		<div class="row" id="features">
+			<div class="col-sm-4 features">
+				<div class="panel" id="panelone">
+					<div class="panel-heading" id="title">
+					 <h3 class="panel-title" >Our traditional games</h3>
+				 </div>
+				 <img src="images/a12.jpeg" alt="text" class="img-circle"  height="75%" width="75%" >
+				 <p>Our traditional games had not been played just for passing time,they created intelligent vibes for the people.The games and sports were smart,tactical and stood as a sign of bravery
+           They remained iconic,different also helped for a healthy lifestyle. </p>
+				 <a href="www.google.com" target="_blank" class="btn btn-warning btn-block">Know More!</a>
+			 </div><!--end of panel-->
+		 </div><!--end of col-sm-4 one-->
+
+		 <div class="col-sm-4 features">
+ 			<div class="panel" id="panelone">
+ 				<div class="panel-heading" id="title">
+ 				 <h3 class="panel-title" >Our traditional art forms</h3>
+ 			 </div>
+ 			 <img src="images/a11.jpg" alt="text" class="img-circle" height="75%" width="75%">
+ 			 <p>Our traditional art forms had a soulful essence in them and were totally divineful.We had a remarkable iconic.Our traditional art forms had a soulful essence in them and were totally divineful.We had a remarkable iconic</p>
+ 			 <a href="www.google.com" target="_blank" class="btn btn-warning btn-block">Know More!</a>
+ 		 </div><!--end of panel-->
+ 	 </div><!--end of col-sm-4 two-->
+
+	 <div class="col-sm-4 features">
+		 <div class="panel" id="panelone">
+			 <div class="panel-heading" id="title">
+				<h3 class="panel-title" >Our traditional lifestyles</h3>
+			</div>
+			<img src="images/lyfnew1.jpg" alt="text" class="img-circle" height="75%" width="75%" >
+			<p>The traditional lifestyle was not so sophisticated nor facilitated.Rather it had life in it.It was healthy,peaceful and had a long span.Irrespective of the status all shared a beautiful bond between others and practised ethnic living.</p>
+			<a href="www.google.com" target="_blank" class="btn btn-warning btn-block">Know more!</a>
+		</div><!--end of panel-->
+	</div><!--end of col-sm-4 three-->
+</div><!--end of features-->
+
+		<div class="row" id="moreinfo">
+			<div class="col-12">
+
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab">Location</a></li>
+					<li><a href="#tab2" data-toggle="tab">Events</a></li>
+					<li><a href="#tab3" data-toggle="tab">Volunteer</a></li>
+					<li><a href="#tab4" data-toggle="tab">Shop</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="tab1">
+						<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location</h4>
+
+						<!--<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=waikiki+beach&amp;aq=&amp;sll=19.896766,-155.582782&amp;sspn=8.711424,11.854248&amp;ie=UTF8&amp;hq=&amp;hnear=Waikiki+Beach,+Honolulu,+Hawaii,+United+States&amp;t=m&amp;ll=21.277298,-157.8265&amp;spn=0.015996,0.036478&amp;z=14&amp;output=embed"></iframe>-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5912495749994!2d80.23834131482293!3d13.061669990796831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52666657dc821f%3A0xe3529ce02cd550cc!2sParambariyam!5e0!3m2!1sen!2sin!4v1469783593817" width="100%" height="400px" frameborder="0"  scrolling="no"></iframe>
+
+						</div><!-- end tab-pane -->
+
+					<div class="tab-pane" id="tab2">
+						<h2>Our Events</h2>
+						<div class="list-group">
+								<a href="#" class="list-group-item">
+									<h4 class="list-group-item-heading">july 1,2016:Gaming camp near Marina</h4>
+									<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</a>
+
+									<a href="#" class="list-group-item">
+										<h4 class="list-group-item-heading">june 25,2016:Promotional Meetings</h4>
+										<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</a>
+											<a href="#" class="list-group-item">
+											<h4 class="list-group-item-heading">june 1,2016:Public Awareness Camps</h4>
+											<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										</a>
+										<a href="#" class="list-group-item">
+										<h4 class="list-group-item-heading">May 25,2016:Stage Show on Tradional Lifestyle</h4>
+										<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</a>
+									<a href="#" class="list-group-item">
+									<h4 class="list-group-item-heading">May 1,2016:Regional Get Together</h4>
+									<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</a>
+							</div>
+						</div>
+
+					<div class="tab-pane" id="tab3">
+						<h4>Join hands to promote our culture</h4>
+
+						<img src="images/volunteer.jpg" height="100%" width="100%" class="thumbnail pull-left" alt="Placeholder image">
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<hr>
+
+						<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Join Hands!!</a>
+            <div class="modal fade" id="myModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Be A Volunteer</h4>
+									</div><!--end of modal header-->
+									<div class="modal-body">
+
+										<form class="form-horizontal">
+											<div class="form-group">
+												<label class="col-lg-2 control-label" for="inputName">Name</label>
+												<div class="col-lg-10">
+													<input class="form-control" id="inputName" placeholder="Name" type="text">
+											</div>
+										</div><!--end of form group one-->
+										<div class="form-group">
+											<label class="col-lg-2 control-label" for="inputemail">Email</label>
+											<div class="col-lg-10">
+												<input class="form-control" id="inputemail" placeholder="Email" type="email">
+											</div>
+									</div><!--end of form group two-->
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="inputMessage">Wanna share something</label>
+										<div class="col-lg-10">
+											<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+                      <button class="btn btn-success pull-right" type="submit">Join!</button>
+									</div>
+								</div><!--end of form group three-->
+										</form>
+									</div><!--end of modal body-->
+									<div class="modal-footer">
+										<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+										<button class="btn btn-primary" type="button">Save Changes</button>
+									</div><!--end of modal footer-->
+
+								</div>
+							</div>
+						</div>
+						<a href="#myModal2" class="btn btn-primary" role="button" data-toggle="modal"><span class="glyphicon glyphicon-euro"></span>Donate</a>
+						<div class="modal fade" id="myModal2">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Make a Donation!</h4>
+									</div><!--end of modal header-->
+									<div class="modal-body">
+
+										<form class="form-horizontal">
+											<div class="form-group">
+												<label class="col-lg-2 control-label" for="inputName">Name</label>
+												<div class="col-lg-10">
+													<input class="form-control" id="inputName" placeholder="Name" type="text">
+											</div>
+										</div><!--end of form group one-->
+										<div class="form-group">
+											<label class="col-lg-2 control-label" for="inputemail">Email</label>
+											<div class="col-lg-10">
+												<input class="form-control" id="inputemail" placeholder="Email" type="email">
+											</div>
+									</div><!--end of form group two-->
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="inputMessage">Address</label>
+										<div class="col-lg-10">
+											<textarea class="form-control" id="inputAddress" placeholder="Address" rows="3"></textarea>
+
+									</div>
+								</div><!--end of form group three-->
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputpayment">Payment Mode</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputpayment" placeholder="" type="payment">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputamount">Amount</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputamount" placeholder="Rs" type="amount">
+									</div>
+							</div>
+							<button class="btn btn-success pull-right" type="submit">Donate!</button>
+										</form>
+									</div><!--end of modal body-->
+									<div class="modal-footer">
+										<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+										<button class="btn btn-primary" type="button">Save Changes</button>
+									</div><!--end of modal footer-->
+
+								</div>
+							</div>
+						</div>
+					</div><!-- end tab-pane -->
+
+
+					<div class="tab-pane" id="tab4">
+
+						<div class="row" id="morecourses">
+							<div class="col-sm-4">
+				      <h3>Traditional articles</h3>
+							<div class="thumbnails row">
+								<div class="col-4">
+									<div class="thumbnail">
+										<img src="images/parai.jpg" width="100%" height="100%" alt="Parai"/>
+										<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span><sup>$</sup>39
+									 </div>
+									<div class="caption">
+										<h3>Parai</h3>
+										<p></p>
+				<p><a href="#" class="btn btn-primary btn-small" target="_blank">Buy!</a>
+
+				</div><!--end of caption-->
+				</div><!--end of thumbnail-->
+				</div><!--end of col-6-->
+				<div class="col-4">
+					<div class="thumbnail">
+						<img src="images/pambaram.png"  width="100%" height="100%"  alt="spintop"/>
+						<div class="label label-info price"><span class="glyphicon glyphicon-tag"></span>Free
+					 </div>
+					<div class="caption">
+						<h3>Pambaram</h3>
+						<p></p>
+				<p><a href="#" class="btn btn-primary btn-small" target="_blank">Buy!</a>
+
+
+				</div><!--end of thumbnails row-->
+				</div><!--end of col-12-->
+				</div><!--end of morecourses-->
+				<div class="col-4">
+					<div class="thumbnail">
+						<img src="images/golli.gif"  width="100%" height="100%"  alt="golli"/>
+						<div class="label label-info price"><span class="glyphicon glyphicon-tag"></span>Free
+					 </div>
+					<div class="caption">
+						<h3>Golli</h3>
+						<p></p>
+				<p><a href="#" class="btn btn-primary btn-small" target="_blank">Buy!</a>
+				</div>
+			</div>
+		</div>
+
+
+				</div><!--end of thumbnails row-->
+				</div><!--end of col-12-->
+				</div><!--end of morecourses-->
+</div><!--end of tabe pane-3-->
+				</div><!-- end tab-content -->
+			</div><!-- end tabbable -->
+		</div><!--end of col-12-->
+		</div><!--end of moreinfo-->
+		<hr>
+	</div><!--end of main container-->
+
+	 <footer>
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-sm-2">
+					 <h6>Copyright&copy;2016 XXX</h6>
+				 </div>
+				 <div class="col-sm-4">
+					 <h6>About us</h6>
+					 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				 </div>
+				 <div class="col-sm-2">
+					 <h6>Navigation</h6>
+					 <ul class="unstyled">
+						 <li><a href="#">Home</a></li>
+						 <li><a href="#">About Us</a></li>
+						 <li><a href="#">Services</a></li>
+						 <li><a href="#">Contacts</a></li>
+					 </ul>
+				 </div>
+   <div class="col-sm-2">
+		 <h6>Follow us</h6>
+		 <ul class="unstyled">
+			 <li><a href="#">kjbnkj</a></li>
+			 <li><a href="#">kjbnkj</a></li>
+			 <li><a href="#">kjbnkj</a></li>
+			 <li><a href="#">kjbnkj</a></li>
+		 </ul>
+	 </div>
+	 <div class="col-sm-2">
+		 <h6>Coded with<span class="glyphicon glyphicon-heart">XXX</h6>
+		 </div>
+	 </div>
+ </div>
+
+	 </footer>
+
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+
+	</body>
+</html>
