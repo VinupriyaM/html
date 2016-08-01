@@ -54,6 +54,13 @@ margin-left:-200px;
 .events{
   font-size:20px;
 }
+#myContent
+{
+  margin-top:80px;
+}
+#gamesdesc{
+  margin-top:80px;
+}
 /* --------------------------------------
    Typography
    -------------------------------------- */
@@ -73,6 +80,7 @@ ul.unstyled{
    .navbar-brand
    {
      padding:13px 15px;
+
    }
 
 
@@ -97,19 +105,19 @@ ul.unstyled{
    }
    #slide1
    {
-   background:url('../../images/slide1.jpg') top center no-repeat;
-  /* background:url('../../images/tamilnadu.jpg') top center no-repeat;*/
-     background-size: cover;
+   /*background:url('../../images/slide1.jpg') top center no-repeat;*/
+   /*background:url('../../images/tamilnadu.jpg') top center no-repeat;*/
+   /*background-size: cover;*/
    }
    #slide2
    {
-   background:url('../../images/slide2.jpg') top center no-repeat;
-     background-size: cover;
+   /*background:url('../../images/slide2.jpg') top center no-repeat;
+     background-size: cover;*/
    }
    #slide3
    {
-   background:url('../../images/slide3.jpg') top center no-repeat;
-     background-size: cover;
+   /*background:url('../../images/slide3.jpg') top center no-repeat;
+     background-size: cover;*/
    }
 
 
@@ -130,10 +138,10 @@ ul.unstyled{
 margin:20px 0px;
 }
 .well .page-header{
-  margin-top:0px;
+  margin-top:5px;
   }
   .well .page-header h1{
-    margin-top:0px;
+    margin-top:5px;
   }
   .body{
     -webkit-font-smoothing:antialiased;
@@ -154,7 +162,7 @@ margin:20px 0px;
         line-height:20px;
       }
       .thumbnail .price{
-        font-size:22px;
+        font-size:12px;
         position:absolute;
         top:-10px;
         right:-10px;
@@ -167,25 +175,41 @@ margin:20px 0px;
   .thumbnail span.glyphicon{
     margin-right:5px;
   }
+blockquote{
+  font-size: 25px;
+  font-weight: bold;
+};
+.panel{
+  margin-bottom:10px;
+}
 
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
 
 /* Portrait & landscape phone */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   #slide1
   {
   /*background:url('../../images/carousel_small_01.jpg') top center no-repeat;*/
-background:url('../../images/bnaym.jpg') top center no-repeat;
+background:url('../../images/girlg.jpg') top center no-repeat;
+width:100%;
+height:100%;
+
   }
   #slide2
   {
-  background:url('../../images/1.jpg') top center no-repeat;
+  background:url('../../images/a.jpg') top center no-repeat;
+  width:100%;
+  height:100%;
+
   }
   #slide3
   {
-  background:url('../../images/j20.jpg') top center no-repeat;
+  background:url('../../images/girlnew.jpg') top center no-repeat;
+  width:100%;
+
+
   }
   .thumbnail .price{
     font-size:14px;
@@ -194,37 +218,45 @@ background:url('../../images/bnaym.jpg') top center no-repeat;
     font-size:10px;
   }
   .navbar-brand img{
-    width:100%;
+    width:110%;
     height:30px;
     align:center;
+  }
+  .navbar-responsive-collapse{
+    align-items:center;
   }
 
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   #mycarousel .item{
     height:310px;
   }
   #slide1
   {
   /*background:url('../../images/carousel_small_01.jpg') top center no-repeat;*/
-background:url('../../images/girl.jpg') top center no-repeat;
-height:310px;
-width:320px;
+background:url('../../images/slide1.jpg') top center no-repeat;
+width:100%;
+height:100%;
+
   }
   #slide2
   {
-  background:url('../../images/girl3.jpg') top center no-repeat;
-  height:310px;
-  width:340px;
+  background:url('../../images/slide2.jpg') top center no-repeat;
+  width:100%;
+  height:100%;
+
+
 
   }
   #slide3
   {
-  background:url('../../images/girl2.jpg') top center no-repeat;
-  height:310px;
-  width:330px;
+  background:url('../../images/slide3.jpg') top center no-repeat;
+  width:100%;
+ height:100%;
+
+
 
   }
   .carousel-caption
@@ -236,7 +268,8 @@ width:320px;
     font-size:22px;
   }
   .navbar-brand img{
-    width:50%;
+    width:140%;
+    height:30px;
     align:center;
   }
 
