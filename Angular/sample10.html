@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app="app9">
+<head>
+ <title>AngularJS</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+ <script src="js/sample9.js"></script>
+<style>
+  .thick{
+    font-weight:bold;
+  }
+  </style>
+</head>
+<body>
+  <div ng-controller="mainCtrl">
+    <div bb-player-list="bbPlayers" array-item="name|uppercase"></div>

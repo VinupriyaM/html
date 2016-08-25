@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="appnew">
+<head>
+  <title>AngularJS</title>
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+ <script src="js/new.js"></script>
+ <style>
+ .bluetext{
+   color:blue;
+ }
+ .boldtext{
+   font-weight:bold;
+ }
+ .stripedblue{
+   color:#007FFF;
+   background-color:#DBE9F4;
+ }
+ .stripedbeige{
+   color:#CC0000;
+   background-color:#F5F5DC;
+ }
+ </style>
+</head>
+<body>
+  <div ng-controller="eventCtrl">
+<p>
+  <select ng-model="textStyling">
+    <option value="bluetext">Blue Text</option>
+    <option value="boldtext">Bold Text</option>
+  </select>
+</p>
+
+<p ng-class="textStyling">Some Random Text</p>
+</div>
+</body>
+</html>
