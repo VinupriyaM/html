@@ -1,0 +1,134 @@
+<!-- <div>
+  <h1 align="center">Crime data</h1>
+  <select>
+    <option value="year">Year</option>
+    <option value="u500">Under500</option>
+    <option value="o500">Over500</option>
+  </select>
+  <input type="text">
+  <button type="btn-primary">Filter</button>
+
+  <center>
+  <table>
+  <tr>
+    <th>Year</th>
+    <th>Under500</th>
+    <th>Over500</th>
+  </tr>
+   <tr ng-repeat="crime in $ctrl.crimes">
+    <td>{{crime.year}}</td>
+    <td>{{crime.under500}}</td>
+    <td>{{crime.over500}}</td>
+  </tr>
+  <tr ng-repeat="crime in $ctrl.crimes">
+    <td>{{crime.year}}</td>
+    <td>{{crime.under500}}</td>
+    <td>{{crime.over500}}</td>
+  </tr>
+</table>
+</center>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="margin-left:900px; margin-top:300px">
+  <div class="btn-group"  role="group" aria-label="First group" id="buttons">
+  </div>
+
+<form style="margin-top:40px;">
+Year:<br>
+<input type="text" name="Year" id="year"><br>
+Above500:<br>
+<input type="text" name="Above500" id="under"><br>
+Under500:<br>
+<input type="text" name="Under500" id="over"><br>
+<br>
+<input type="button" value="Add" onclick="adds()"/>
+</form>
+ -->
+
+
+<html>
+<head>
+  <title></title>
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css" -->
+</head>
+<body>
+  <div class="top">
+    <select ng-model="search">
+      <option value="yr">Year</option>
+      <option value="ab">Above500</option>
+      <option value="bl">Below500</option>
+    </select>
+    <input type="text"/>
+    <button>Filter</button>
+  </div>
+  <div>
+  <table>
+    <caption>Crime Data</caption>
+    <tr>
+      <th>
+        <!-- <a href="#" ng-click="sortType='year'"> -->
+        <a href="#" ng-click="sortType = 'year'; sortReverse = !sortReverse">
+          Year
+
+        <span ng-show="sortType == 'year' && !sortReverse" class="fa fa-caret-down"></span>
+        <span ng-show="sortType == 'year' && sortReverse" class="fa fa-caret-up"></span>
+      </th>
+      <th>
+          <a href="#" ng-click="sortType = 'under500'; sortReverse = !sortReverse">
+            Under500
+
+            <span ng-show="sortType == 'under500' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'under500' && sortReverse" class="fa fa-caret-up"></span>
+      </th>
+      <th>
+          <a href="#" ng-click="sortType = 'over500'; sortReverse = !sortReverse">
+          Below 500
+
+         <span ng-show="sortType == 'over500' && !sortReverse" class="fa fa-caret-down"></span>
+         <span ng-show="sortType == 'over500' && sortReverse" class="fa fa-caret-up"></span>
+        </th>
+    </tr>
+    <tr ng-repeat="c in $ctrl.crimes | myfilter:(($ctrl.currentPage)*($ctrl.pageSize))| limitTo:$ctrl.pageSize|orderBy:sortType:sortReverse |filter:$ctrl.search" >
+      <td>{{c.year}}</td>
+      <td>{{c.under500}}</td>
+      <td>{{c.over500}}</td>
+    <td><button ng-click="$ctrl.removeItem(c)">Delete</button></td>
+    </tr>
+</table>
+<div style="margin-left:auto;margin-right:auto;width:500px;padding-top:30px;float:right;">
+  <button ng-disabled="$ctrl.currentPage == 0" ng-click="$ctrl.currentPage=$ctrl.currentPage-1">
+         <<
+   </button>
+  <button ng-repeat="i in [1,2,3,4,5,6,7,8]  | limitTo:$ctrl.pageCount" ng-click="$ctrl.currentPage=i-1">{{i}}</button>
+  <!-- <button ng-repeat="i in $ctrl.pageCount" ng-click="$ctrl.currentPage=i-1">{{i}}</button> -->
+  <button ng-disabled="$ctrl.currentPage>=$ctrl.crimes.length/$ctrl.pageSize-1" ng-click="$ctrl.currentPage=$ctrl.currentPage+1">
+         >>
+  </button>
+</div>
+
+<form name="form">
+<label>Year:</label>
+<br>
+<input type="number" ng-model="year" name="year" min="1947" max="2016" ng-required="true"><br/>
+<span class="error-message" ng-show="form.year.$dirty && form.year.$error.required">Must Enter An Year</span>
+<span ng-if="form.year.$error.min">Year should be at least 1947</span>
+<span ng-if="form.year.$error.max">Year should be less than 2016</span>
+<br>
+<br>
+<label>Above500:<br></label>
+<br>
+<input type="number" ng-model="under" name="under" ng-pattern="/^[0-9]+(\.[0-9]{0})?$/" min="0" max="100000">
+<span ng-if="form.under.$invalid">Value should be in the range of 0 to 100000</span>
+<br>
+<br>
+<br>
+<br>
+<label>Under500:<br></label>
+<br>
+<input type="number" ng-model="over" name="over" ng-pattern="/^[0-9]+(\.[0-9]{0})?$/" min="0" max="100000">
+<span ng-if="form.under.$invalid">Value should be in the range of 0 to 100000</span>
+<!-- <input type="number" ng-model="over" name="over" ng-click="$ctrl.checked(over)">
+<span ng-if="form.over.$error.checked">Value should be in the range of 0 to 100000</span> -->
+<br>
+<button ng-click="$ctrl.add(year,under,over)" ng-disabled="form.$invalid">ADD</button>
+</form>
+</body>
+</html>
